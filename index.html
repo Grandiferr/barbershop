@@ -1,10 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Барбершоп</title>
 </head>
 <body>
-	
+	<header>
+		<nav class="main-nav">
+			<ul>
+				<li>Информация</li>
+				<li>Новости</li>
+				<li>Прайс-лист</li>
+				<li>Магазин</li>
+				<li>Контакты</li>
+			</ul>
+		</nav>
+		<div class="enter">
+			<a class="enter--link" href="#">Вход</a>
+		</div>
+	</header>
+	<main class="main-container">
+		<div class="logo-container">
+			<img src="../img/logo.png">
+		</div>
+		<section class="features">
+			<div class="feature-item">
+				<b class="feature-item--head">Быстро</b>
+				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nihil.</p>
+			</div>
+			<div class="feature-item">
+				<b class="feature-item--head">Круто</b>
+				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, omnis!</p>
+			</div>
+			<div class="feature-item">
+				<b class="feature-item--head">Дорого</b>
+				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, itaque!</p>
+			</div>
+		</section>
+		<section class="index-content">
+			<div class="index-content--left">
+				<h2 class="index-content--header">Новости</h2>
+				<ul class="news-list">
+					<li class="news-list--item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nam, maxime tempore voluptatum eaque est amet, ipsum dolore ad consequatur modi, labore, rerum veniam quia.</p>
+						<time datetime="2015-09-27" pubdate>27 сентября</time>
+					</li>
+					<li class="news-list--item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet pariatur voluptas, reprehenderit possimus minus optio architecto! Cum delectus, facilis! Facilis, earum, labore. Ipsam, rerum.</p>
+						<time datetime="2015-09-25" pubdate>25 сентября</time>
+					</li>
+				</ul>
+				<a href="#" class="btn">Все новости</a>
+			</div>
+			<div class="index-content--right">
+				<h2 class="index-content--header">Фотогалерея</h2>
+				<div class="gallery">
+					<figure class="gallery-img"></figure>
+					<button class="btn btn-prev">Назад</button>
+					<button class="btn btn-next">Вперед</button>
+				</div>
+			</div>
+		</section>
+		<section class="index-content">
+			<div class="index-content--left">
+				<h2 class="index-content--header">Контактная информация</h2>
+				<p></p>
+				<p></p>
+				<button class="btn">Как проехать</button>
+				<button class="btn">Обратная связь</button>
+			</div>
+			<div class="index-content--right">
+				<h2 class="index-content--header">Записаться</h2>
+				<p></p>
+				<form class="f-appointment" action="post">
+					<input type="datetime" name="date" id="date">
+					<input type="time" name="time" id="time">
+					<input type="text" name="fullname" id="fullname">
+					<input type="tel" name="tel" id="telnum">
+					<button type="submit">Отправить</button>
+				</form>
+			</div>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<section class="footer--info">
+			<p></p>
+		</section>
+		<section class="footer--socials">
+			<a href="" class="socials--link socials--link_vk"></a>
+			<a href="" class="socials--link socials--link_fb"></a>
+			<a href="" class="socials--link socials--link_inst"></a>
+		</section>
+		<section class="footer--devs">
+			<p>Разработано</p>
+			<a class="btn" href="http://htmlacademy.ru">Htmlacademy.ru</a>
+		</section>
+	</footer>
 </body>
 </html>
