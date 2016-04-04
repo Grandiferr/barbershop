@@ -3,25 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Барбершоп</title>
+	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 	<header>
 		<nav class="main-nav">
-			<ul>
-				<li>Информация</li>
-				<li>Новости</li>
-				<li>Прайс-лист</li>
-				<li>Магазин</li>
-				<li>Контакты</li>
+			<ul class="main-nav--list">
+				<li class="main-nav--item">Информация</li>
+				<li class="main-nav--item">Новости</li>
+				<li class="main-nav--item">Прайс-лист</li>
+				<li class="main-nav--item">Магазин</li>
+				<li class="main-nav--item">Контакты</li>
 			</ul>
 		</nav>
 		<div class="enter">
 			<a class="enter--link" href="#">Вход</a>
 		</div>
 	</header>
-	<main class="main-container">
+	<main class="main-container main-index">
 		<div class="logo-container">
-			<img src="../img/logo.png">
+			<img src="./images/logo-main.png" alt="logo">
 		</div>
 		<section class="features">
 			<div class="feature-item">
@@ -55,7 +56,9 @@
 			<div class="index-content--right">
 				<h2 class="index-content--header">Фотогалерея</h2>
 				<div class="gallery">
-					<figure class="gallery-img"></figure>
+					<figure class="gallery-img">
+						<img src="./images/gallery-item.jpg">
+					</figure>
 					<button class="btn btn-prev">Назад</button>
 					<button class="btn btn-next">Вперед</button>
 				</div>
@@ -82,19 +85,22 @@
 			</div>
 		</section>
 	</main>
-	<footer class="main-footer">
-		<section class="footer--info">
-			<p></p>
-		</section>
-		<section class="footer--socials">
-			<a href="#" class="socials--link socials--link_vk"></a>
-			<a href="#" class="socials--link socials--link_fb"></a>
-			<a href="#" class="socials--link socials--link_inst"></a>
-		</section>
-		<section class="footer--devs">
-			<p>Разработано</p>
-			<a class="btn" href="http://htmlacademy.ru">Htmlacademy.ru</a>
-		</section>
-	</footer>
+		<footer class="main-footer">
+			<section class="footer--info">
+				<p>Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+				<a class="footer-link" href="#" >Как нас найти?</a><br>
+				Телефон: +7 (495) 666-02-66</p>
+			</section>
+			<section class="footer--socials">
+				<a href="#" class="socials--link socials--link_vk"></a>
+				<a href="#" class="socials--link socials--link_fb"></a>
+				<a href="#" class="socials--link socials--link_inst"></a>
+			</section>
+			<section class="footer--devs">
+				<p>Разработано</p>
+				<a class="btn" href="http://htmlacademy.ru">Htmlacademy.ru</a>
+			</section>
+		</footer>
 </body>
 </html>
