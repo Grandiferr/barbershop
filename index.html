@@ -6,25 +6,27 @@
 	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-	<header>
-		<nav class="main-nav">
-			<ul class="main-nav--list">
-				<li class="main-nav--item">Информация</li>
-				<li class="main-nav--item">Новости</li>
-				<li class="main-nav--item">Прайс-лист</li>
-				<li class="main-nav--item">Магазин</li>
-				<li class="main-nav--item">Контакты</li>
-			</ul>
-		</nav>
-		<div class="enter">
-			<a class="enter--link" href="#">Вход</a>
+	<header class="top-header">
+		<div class="container clearfix">
+			<nav class="main-nav">
+				<ul class="main-nav--list">
+					<li class="main-nav--item">Информация</li>
+					<li class="main-nav--item">Новости</li>
+					<li class="main-nav--item">Прайс-лист</li>
+					<li class="main-nav--item">Магазин</li>
+					<li class="main-nav--item">Контакты</li>
+				</ul>
+			</nav>
+			<div class="enter">
+				<a class="enter--link" href="#">Вход</a>
+			</div>
 		</div>
 	</header>
-	<main class="main-container main-index">
+	<main class="container">
 		<div class="logo-container">
 			<img src="./images/logo-main.png" alt="logo">
 		</div>
-		<section class="features">
+		<section class="features clearfix">
 			<div class="feature-item">
 				<b class="feature-item--head">Быстро</b>
 				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nihil.</p>
@@ -38,7 +40,7 @@
 				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, itaque!</p>
 			</div>
 		</section>
-		<section class="index-content">
+		<section class="index-content clearfix">
 			<div class="index-content--left">
 				<h2 class="index-content--header">Новости</h2>
 				<ul class="news-list">
@@ -64,13 +66,13 @@
 				</div>
 			</div>
 		</section>
-		<section class="index-content">
+		<section class="index-content clearfix">
 			<div class="index-content--left">
 				<h2 class="index-content--header">Контактная информация</h2>
 				<p></p>
 				<p></p>
-				<button class="btn">Как проехать</button>
-				<button class="btn">Обратная связь</button>
+				<a class="btn">Как проехать</button>
+				<a class="btn">Обратная связь</button>
 			</div>
 			<div class="index-content--right">
 				<h2 class="index-content--header">Записаться</h2>
@@ -85,7 +87,8 @@
 			</div>
 		</section>
 	</main>
-		<footer class="main-footer">
+	<footer class="footer">
+		<div class="container clearfix">
 			<section class="footer--info">
 				<p>Барбершоп "Бородинский"<br>
 				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
@@ -101,6 +104,7 @@
 				<p>Разработано</p>
 				<a class="btn" href="http://htmlacademy.ru">Htmlacademy.ru</a>
 			</section>
-		</footer>
+		</div>
+	</footer>
 </body>
 </html>
