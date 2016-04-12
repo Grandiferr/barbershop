@@ -47,7 +47,7 @@
 		<aside class="filters">
 			<form class="filters--form" method="GET">
 				<section class="filter-brands">
-					<header class="heading">
+					<header class="filter-header">
 						Производители
 					</header>
 					<ul class="filter-brands--list">
@@ -90,12 +90,12 @@
 					</ul>
 				</section>
 				<section class="filter-categories">
-					<header class="heading">
+					<header class="filter-header">
 						Группы товаров
 					</header>
 					<ul class="filter-categories--list">
 						<li class="filter-categories--category">
-							<input type="radio" name="categories" id="shaving" value="shaving">
+							<input type="radio" name="categories" id="shaving" value="shaving" checked>
 							<label class="filter-radio" for="shaving">
 								<span>Бритвенные принадлежности</span>
 							</label>
@@ -113,58 +113,106 @@
 							</label>
 						</li>
 					</ul>
-					<button class="btn" type="submit">Показать</button>
 				</section>
+				<button class="btn" type="submit">Показать</button>
 			</form>
 		</aside>
 		<section class="content-container">
 			<section class="catalog">
 				<article class="catalog-item">
-					<img src="./images/img/img-1.jpg" alt="item-pic" class="catalog-item--pic">
-					<header class="catalog-item--header">Набор для путешествий <span class="catalog-item--header_brand">«Baxter of California»</span></header>
-					<section class="buy">
-						<div class="buy--price rub">2900</div>
-						<a class="btn buy--btn" href="#">Купить</a>
+					<a href="./item.html">
+						<img src="./images/img/img-1.jpg" alt="item-pic" class="catalog-item--pic">
+					</a>
+					<section class="catalog-item--desc">
+						<header>
+							<a class="catalog-item--header" href="./item.html">
+								<span class="catalog-item--header_brand">Baxter of California</span> Набор для путешествий
+							</a>
+						</header>
+						<section class="buy clearfix">
+							<div class="buy--price rub">2900 руб</div>
+							<a class="btn buy--btn" href="#">Купить</a>
+						</section>
 					</section>
 				</article>
 				<article class="catalog-item">
-					<img src="./images/img/img-2.jpg" alt="item-pic" class="catalog-item--pic">
-					<header class="catalog-item--header">Увлажняющий кондиционер <span class="catalog-item--header_brand">«Baxter of California»</span></header>
-					<section class="buy">
-						<div class="buy--price rub">750</div>
-						<a class="btn buy--btn" href="#">Купить</a>
+					<a href="#">
+						<img src="./images/img/img-2.jpg" alt="item-pic" class="catalog-item--pic">
+					</a>
+					<section class="catalog-item--desc">
+						<header>
+						<a class="catalog-item--header" href="#">
+							<span class="catalog-item--header_brand">Baxter of California</span> Увлажняющий кондиционер
+						</a>
+						</header>
+						<section class="buy clearfix">
+							<div class="buy--price rub">750 руб</div>
+							<a class="btn buy--btn" href="#">Купить</a>
+						</section>
 					</section>
 				</article>
 				<article class="catalog-item">
-					<img src="./images/img/img-3.jpg" alt="item-pic" class="catalog-item--pic">
-					<header class="catalog-item--header">Гель для волос <span class="catalog-item--header_brand">«Suavecito»</span></header>
-					<section class="buy">
-						<div class="buy--price rub">290</div>
-						<a class="btn buy--btn" href="#">Купить</a>
+					<a href="#">
+						<img src="./images/img/img-3.jpg" alt="item-pic" class="catalog-item--pic">
+					</a>
+					<section class="catalog-item--desc">
+						<header>
+							<a class="catalog-item--header" href="#">
+								<span class="catalog-item--header_brand">Suavecito</span> Гель для волос
+							</a>
+						</header>
+						<section class="buy clearfix">
+							<div class="buy--price rub">290 руб</div>
+							<a class="btn buy--btn" href="#">Купить</a>
+						</section>
 					</section>
 				</article>
 				<article class="catalog-item">
-					<img src="./images/img/img-4.jpg" alt="item-pic" class="catalog-item--pic">
-					<header class="catalog-item--header">Глина для уладки волос <span class="catalog-item--header_brand">«American Crew»</span></header>
-					<section class="buy">
-						<div class="buy--price rub">500</div>
-						<a class="btn buy--btn" href="#">Купить</a>
+					<a href="#">
+						<img src="./images/img/img-4.jpg" alt="item-pic" class="catalog-item--pic">
+					</a>
+					<section class="catalog-item--desc">
+						<header>
+							<a class="catalog-item--header" href="#">
+								<span class="catalog-item--header_brand">American Crew</span> Глина для уладки волос
+							</a>
+						</header>
+						<section class="buy clearfix">
+							<div class="buy--price rub">500 руб</div>
+							<a class="btn buy--btn" href="#">Купить</a>
+						</section>
 					</section>
 				</article>
 				<article class="catalog-item">
-					<img src="./images/img/img-5.jpg" alt="item-pic" class="catalog-item--pic">
-					<header class="catalog-item--header">Гель для волос <span class="catalog-item--header_brand">«American Crew»</span></header>
-					<section class="buy">
-						<div class="buy--price rub">300</div>
-						<a class="btn buy--btn" href="#">Купить</a>
+					<a href="#">
+						<img src="./images/img/img-5.jpg" alt="item-pic" class="catalog-item--pic">
+					</a>
+					<section class="catalog-item--desc">
+						<header>
+							<a class="catalog-item--header" href="#">
+								<span class="catalog-item--header_brand">American Crew</span> Гель для волос
+							</a>
+						</header>
+						<section class="buy clearfix">
+							<div class="buy--price rub">300 руб</div>
+							<a class="btn buy--btn" href="#">Купить</a>
+						</section>
 					</section>
 				</article>
 				<article class="catalog-item">
-					<img src="./images/img/img-6.jpg" alt="item-pic" class="catalog-item--pic">
-					<header class="catalog-item--header">Набор для бритья <span class="catalog-item--header_brand">«Baxter of California»</span></header>
-					<section class="buy">
-						<div class="buy--price rub">3900</div>
-						<a class="btn buy--btn" href="#">Купить</a>
+					<a href="#">
+						<img src="./images/img/img-6.jpg" alt="item-pic" class="catalog-item--pic">
+					</a>
+					<section class="catalog-item--desc">
+						<header>
+							<a class="catalog-item--header" href="#">
+								<span class="catalog-item--header_brand">Baxter of California</span> Набор для бритья
+							</a>
+						</header>
+						<section class="buy clearfix">
+							<div class="buy--price rub">3900 руб</div>
+							<a class="btn buy--btn" href="#">Купить</a>
+						</section>
 					</section>
 				</article>
 			</section>

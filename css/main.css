@@ -520,28 +520,36 @@ body {
 }
 
 .buy {
-	min-width: 180px;
-	margin-bottom: 65px;
+	width: 190px;
 }
 
 .buy--price {
-	display: inline-block;
-	padding: 15px 25px;
-	background-color: #e5e5e5;
-	position: relative;
+    display: block;
+    float: left;
+    width: 110px;
+    max-height: 48px;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: #e5e5e5;
 }
 
-.rub::after {
-	display: inline-block;
-	content: 'РУБ';
-	position: relative;
-	left: 3px;
-}
+
 
 .buy--btn {
-	display: inline-block;
+	display: block;
 	margin-left: -3px;
 	margin-right: 0;
+	float: right;
+	box-sizing: border-box;
+	padding: 15px;
+	min-width: 80px;
+	text-align: center;
+	max-height: 48px;
 }
 
 .item-ingredients {
@@ -554,6 +562,7 @@ body {
 
 .item-ingredients--heading {
 	margin-bottom: 35px;
+	margin-top: 60px;
 	text-transform: uppercase;
 }
 
@@ -587,17 +596,96 @@ body {
 .filters section,
 .filter-brands,
 .filter-categories {
-	min-width: 220px;
+	max-width: 220px;
 	margin-bottom: 50px;
+	
 }
 
 .filter-header {
-	margin-bottom: 30px;
+	margin-bottom: 25px;
+	font-size: 24px;
+	line-height: 42px;
+	text-transform: uppercase;
+}
+
+.filters ul, 
+.filters ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.filters li {
+	text-transform: uppercase;
+	margin-bottom: 18px;
+	position: relative;
+}
+
+.filter-brands input,
+.filter-categories input {
+	display: none;
+}
+
+.filter-radio,
+.filter-checkbox {
+	cursor: pointer;
+}
+
+.filter-radio::before {
+	content: '';
+	display: inline-block;
+	margin-right: 23px;;
+	float: left;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: -3px;
+	border: 2px solid black;
+	background-color: rgba(0, 0, 0, 0);
+	border-radius: 50%;
+}
+
+.filter-checkbox::before {
+	content: '';
+	display: inline-block;
+	margin-right: 23px;;
+	float: left;
+	width: 20px;
+	height: 20px;
+	position: relative;
+	top: -3px;
+	border: 2px solid black;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+}
+
+.filter-categories--category input:checked + label::after {
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 4px;
+	left: 7px;
+	border-radius: 50%;
+	background-color: #000;
+	cursor: pointer;
+}
+
+.filter-brands--item input:checked + label::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 3px;
+    left: 6px;
+    background: url("../images/sprites.png") no-repeat 0px -62px;
+    cursor: pointer;
 }
 
 .content-container {
 	width: 700px;
 	float: left;
+	margin-bottom: 50px;
 }
 
 .catalog {
@@ -610,14 +698,41 @@ body {
 	width: 220px;
 	float: left;
 	margin-right: 20px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+	transition: ease 0.6s;
+}
+
+.catalog-item:hover {
+	box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+	transition: ease 0.5s;
 }
 
 .catalog-item:nth-child(3n) {
 	margin-right: 0;
 }
 
+.catalog-item--header { 		/* it's a link in header, actually*/
+	display: block;
+	margin-bottom: 15px;
+	color: black;
+	text-decoration: none;
+}
+
 .catalog-item--header_brand {
 	display: block;
+	text-transform: uppercase;
+}
+
+.catalog-item--desc {
+	font-size: 14px;
+	line-height: 18px;
+	position: relative;
+	padding: 15px;
+}
+
+.catalog-item--desc .buy {
 }
 
 .pagination {
@@ -629,8 +744,23 @@ body {
 	width: 45px;
 	line-height: 45px;
 	margin-right: 5px;
-	text-align: center;
 	vertical-align: baseline;
+	text-align: center;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	transition: ease 0.3s;
+}
+
+.pagination--page_active {
+	background-color: white;
+	color: black;
+	cursor: default;
+}
+
+.pagination--page:not(.pagination--page_active):hover {
+	background-color: #663d15;
+	transition: ease 0.3s;
 }
 
 /* Pricelist Page */
