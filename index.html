@@ -3,18 +3,20 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Барбершоп</title>
+	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header class="top-header">
 		<div class="container clearfix">
-			<nav class="main-nav">
-				<ul class="main-nav--list">
-					<li class="main-nav--item">Информация</li>
-					<li class="main-nav--item">Новости</li>
-					<li class="main-nav--item">Прайс-лист</li>
-					<li class="main-nav--item">Магазин</li>
-					<li class="main-nav--item">Контакты</li>
+			<nav class="nav">
+				<ul class="nav--list">
+					<li class="nav--item"><a href="#">Информация</a></li>
+					<li class="nav--item"><a href="#">Новости</a></li>
+					<li class="nav--item"><a href="price.html">Прайс-лист</a></li>
+					<li class="nav--item"><a href="catalog.html">Магазин</a></li>
+					<li class="nav--item"><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="enter">
@@ -24,20 +26,20 @@
 	</header>
 	<main class="container">
 		<div class="logo-container">
-			<img src="./images/logo-main.png" alt="logo">
+			<img src="./images/logo-main.png" width="368px" height="205px" alt="logo">
 		</div>
 		<section class="features clearfix">
 			<div class="feature-item">
 				<b class="feature-item--head">Быстро</b>
-				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nihil.</p>
+				<p class="feature-item--desc">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стрижки-минутки!</p>
 			</div>
 			<div class="feature-item">
 				<b class="feature-item--head">Круто</b>
-				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, omnis!</p>
+				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, quis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, omnis!</p>
 			</div>
 			<div class="feature-item">
 				<b class="feature-item--head">Дорого</b>
-				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, itaque!</p>
+				<p class="feature-item--desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, aspernatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, itaque!</p>
 			</div>
 		</section>
 		<section class="index-content clearfix">
@@ -45,11 +47,11 @@
 				<h2 class="index-content--header">Новости</h2>
 				<ul class="news-list">
 					<li class="news-list--item">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nam, maxime tempore voluptatum eaque est amet, ipsum dolore ad consequatur modi, labore, rerum veniam quia.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nam, maxime tempore voluptatum eaque est amet.</p>
 						<time datetime="2015-09-27" pubdate>27 сентября</time>
 					</li>
 					<li class="news-list--item">
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet pariatur voluptas, reprehenderit possimus minus optio architecto! Cum delectus, facilis! Facilis, earum, labore. Ipsam, rerum.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint eveniet pariatur voluptas, reprehenderit possimus minus optio architecto! </p>
 						<time datetime="2015-09-25" pubdate>25 сентября</time>
 					</li>
 				</ul>
@@ -59,9 +61,9 @@
 				<h2 class="index-content--header">Фотогалерея</h2>
 				<div class="gallery">
 					<figure class="gallery-img">
-						<img src="./images/gallery-item.jpg">
+						<img src="./images/gallery-item.jpg" width="286" height="164">
 					</figure>
-					<button class="btn btn-prev">Назад</button>
+					<button class="btn btn-prev" disabled>Назад</button>
 					<button class="btn btn-next">Вперед</button>
 				</div>
 			</div>
@@ -69,20 +71,30 @@
 		<section class="index-content clearfix">
 			<div class="index-content--left">
 				<h2 class="index-content--header">Контактная информация</h2>
-				<p></p>
-				<p></p>
-				<a class="btn">Как проехать</button>
-				<a class="btn">Обратная связь</button>
+				<p>
+					Барбершоп "Бородинский"<br>
+					Адрес: г. Санкт-Петербург, б. Конюшенная, д. 19/8<br>
+					Телефон: +7 (495) 666-02-66<br>
+				</p>
+				<p>
+					Время работы:<br>
+					Пн-Пт. с 10:00 до 22:00<br>
+					Сб-Вс. с 10:00 до 19:00<br>
+				</p>
+				<a class="btn">Как проехать</a>
+				<a class="btn">Обратная связь</a>
 			</div>
 			<div class="index-content--right">
 				<h2 class="index-content--header">Записаться</h2>
-				<p></p>
+				<p>
+					Укажите желаемую датуи время и мы свяжемся с вами для утверждения брони
+				</p>
 				<form class="f-appointment" action="post">
-					<input type="datetime" name="date" id="date">
-					<input type="time" name="time" id="time">
-					<input type="text" name="fullname" id="fullname">
-					<input type="tel" name="tel" id="telnum">
-					<button type="submit">Отправить</button>
+					<input type="datetime" name="date" id="date" placeholder="Дата">
+					<input type="time" name="time" id="time" placeholder="Время">
+					<input type="text" name="fullname" id="fullname" placeholder="Ваше имя">
+					<input type="tel" name="tel" id="telnum" placeholder="Телефон">
+					<button class="btn" type="submit">Отправить</button>
 				</form>
 			</div>
 		</section>
@@ -96,9 +108,12 @@
 				Телефон: +7 (495) 666-02-66</p>
 			</section>
 			<section class="footer--socials">
-				<a href="#" class="socials--link socials--link_vk"></a>
-				<a href="#" class="socials--link socials--link_fb"></a>
-				<a href="#" class="socials--link socials--link_inst"></a>
+				<p>
+					Давайте дружить!
+				</p>
+				<a href="#" class="socials--link socials--link_vk">Вконтакте</a>
+				<a href="#" class="socials--link socials--link_fb">Фейсбук</a>
+				<a href="#" class="socials--link socials--link_inst">Инстаграм</a>
 			</section>
 			<section class="footer--devs">
 				<p>Разработано</p>

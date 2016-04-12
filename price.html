@@ -3,21 +3,23 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Price-list Barbershop</title>
+	<link rel="stylesheet" href="./css/normalize.css">
 	<link rel="stylesheet" href="./css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
-<body>
+<body class="inner-body">
 	<header class="top-header">
 		<div class="container clearfix">
-			<nav class="inner-nav">
+			<nav class="nav">
 				<div class="logo">
-					<img src="./images/logo-little.png" alt="logo">
+					<a href="./index.html"><img src="./images/logo-little.png" alt="logo"></a>
 				</div>
-				<ul class="inner-nav--list">
-						<li class="inner-nav--item">Информация</li>
-					<li class="inner-nav--item">Новости</li>
-					<li class="inner-nav--item inner-nav--item_active">Прайс-лист</li>
-					<li class="inner-nav--item">Магазин</li>
-					<li class="inner-nav--item">Контакты</li>
+				<ul class="nav--list">
+					<li class="nav--item"><a href="#">Информация</a></li>
+					<li class="nav--item"><a href="#">Новости</a></li>
+					<li class="nav--item nav--item_active"><a href="./price.html">Прайс-лист</a></li>
+					<li class="nav--item"><a href="./catalog.html">Магазин</a></li>
+					<li class="nav--item"><a href="#">Контакты</a></li>
 				</ul>
 			</nav>
 			<div class="enter">
@@ -30,8 +32,12 @@
 			<h1 class="main-content--header">Прайс-лист</h1>
 			<section class="breadcrumbs">
 			<ol class="breadcrumbs-list">
-				<li class="breadcrumbs-list--item">Главная</li>
-				<li class="breadcrumbs-list--item breadcrumbs-list--item_active">Прайс-лист</li>
+				<li class="breadcrumbs-list--item">
+					<a href="./index.html">Главная</a>
+				</li>
+				<li class="breadcrumbs-list--item breadcrumbs-list--item_active">
+					<span>Прайс-лист</span></a>
+				</li>
 			</ol>
 			</section>
 		</header>
@@ -67,8 +73,8 @@
 				
 			</div>
 			<div class="desc-block clearfix">
+				<h2 class="heading">Несколько слов о нас:</h2>
 				<section class="desc-left">
-					<h2 class="heading">Несколько слов о нас:</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam rerum minima corrupti reprehenderit nisi corporis eveniet odio, ipsam blanditiis itaque laboriosam doloremque, temporibus fuga quam!</p>
 				</section>
 				<section class="desc-right">
@@ -86,9 +92,12 @@
 				Телефон: +7 (495) 666-02-66</p>
 			</section>
 			<section class="footer--socials">
-				<a href="#" class="socials--link socials--link_vk"></a>
-				<a href="#" class="socials--link socials--link_fb"></a>
-				<a href="#" class="socials--link socials--link_inst"></a>
+				<p>
+					Давайте дружить!
+				</p>
+				<a href="#" class="socials--link socials--link_vk">Вконтакте</a>
+				<a href="#" class="socials--link socials--link_fb">Фейсбук</a>
+				<a href="#" class="socials--link socials--link_inst">Инстаграм</a>
 			</section>
 			<section class="footer--devs">
 				<p>Разработано</p>
