@@ -6,7 +6,236 @@ body {
 	color: #000;
 }
 
-h2 {
-	font-size: 30px;
-	line-height: auto;
+.container {
+	width: 960px;
+	padding: 0 10px;
+	outline: 1px dotted #000;
+	margin: 0 auto;
 }
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear:both;
+}
+
+.main-nav {
+	float: left;
+	width: 780px;
+}
+
+
+
+.logo {
+	float: left;
+	min-width: 150px;
+}
+
+.enter {
+	float: right;
+	width: 150px;
+}
+
+
+
+.logo-container {
+	width: 460px;
+	margin: 0 auto;
+}
+
+.features {
+	margin-bottom: 65px;
+}
+
+.feature-item {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+
+.feature-item:last-child {
+	margin-right: 0;
+}
+
+.index-content {
+	padding: 80px 50px;
+}
+
+.index-content--left {
+	width: 380px;
+	float: left;
+}
+
+.index-content--right {
+	width: 300px;
+	float: right;
+}
+
+.footer {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
+
+.footer--info {
+	width: 380px;
+	float: left;
+	margin-right: 20px;
+}
+
+.footer--socials {
+	width: 180px;
+	float: left;
+}
+
+.footer--devs {
+	width: 140px;
+	float: right;
+}
+
+/* Item Page */
+
+.inner-nav {
+	float: left;
+	width: 720px;
+	margin-bottom: 55px;
+}
+
+.header-container {
+	margin-bottom: 45px;
+}
+
+.item-gallery {
+	width: 480px;
+	float: left;
+	margin-right: 60px;
+}
+
+.item-gallery--big {
+	width: 100%;
+}
+
+.item-gallery--small {
+	width: auto;
+	float: left;
+}
+
+.item-gallery--small img {
+	margin-right: 20px;
+}
+
+.item-gallery--small img:last-child {
+	margin-right: 0px;
+}
+
+.item-desc {
+	width: 380px;
+	padding: 10px;
+	float: left;
+	margin-bottom: 35px;
+}
+
+.buy {
+	min-width: 180px;
+	margin-bottom: 65px;
+}
+
+.buy--price {
+	display: inline-block;
+	padding: 15px 25px;
+}
+
+.buy--btn {
+	display: inline-block;
+}
+
+.item-ingredients {
+	min-width: 250px;
+}
+
+/* Catalog (Shop) page */
+
+.filters {
+	width: 220px;
+	margin-right: 10px;
+	float: left;
+}
+
+.filters section,
+.filter-brands,
+.filter-categories {
+	min-width: 220px;
+	margin-bottom: 50px;
+}
+
+.filter-header {
+	margin-bottom: 30px;
+}
+
+.content-container {
+	width: 700px;
+	float: left;
+}
+
+.catalog {
+	width: 700px;
+	float: left;
+	margin-bottom: 40px;
+}
+
+.catalog-item {
+	width: 220px;
+	float: left;
+	margin-right: 20px;
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.catalog-item--header_brand {
+	display: block;
+}
+
+.pagination {
+	float: left;
+}
+
+.pagination--page {
+	display: inline-block;
+	width: 45px;
+	line-height: 45px;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: baseline;
+}
+
+/* Pricelist Page */
+
+.price-promo {
+	width: 620px;
+	margin: 0 auto;
+	margin-bottom: 70px;
+}
+
+.desc-block {
+	margin-bottom: 65px;
+}
+
+.desc-block:last-child {
+	margin-bottom: 0px;
+}
+
+.desc-left {
+	width: 380px;
+	margin-right: 100px;
+	float: left;
+}
+
+.desc-right {
+	width: 460px;
+	float: left;
+}
+
+
+
+
