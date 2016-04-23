@@ -5,9 +5,6 @@ var login = popup.querySelector("[name=login]");
 var password = popup.querySelector("[name=password]");
 var formSubmit = popup.querySelector(".f-login-form");
 var storageLogin = localStorage.getItem("login");
-var mapOpen = document.querySelector(".open-map");
-var mapPopup = document.querySelector(".popup-map");
-var mapClose = mapPopup.querySelector(".close-button");
 var overlay = document.querySelector(".popup-overlay");
 
 
@@ -41,6 +38,18 @@ close.addEventListener ("click", function(event) {
 	console.log("removed popup");	/* Act on the event */
 });
 
+overlay.addEventListener ("click", function(event) {
+	event.preventDefault();
+	popup.classList.remove("popup-show");
+	mapPopup.classList.remove("popup-show");
+	overlay.classList.remove("popup-overlay-show");
+	console.log("removed popup");	/* Act on the event */
+});
+
+var mapOpen = document.querySelector(".open-map");
+var mapPopup = document.querySelector(".popup-map");
+var mapClose = mapPopup.querySelector(".close-button");
+
 mapOpen.addEventListener ("click", function(event) {
 	event.preventDefault();
 	mapPopup.classList.add("popup-show");
@@ -55,11 +64,5 @@ mapClose.addEventListener ("click", function(event) {
 	console.log("removed popup");	/* Act on the event */
 });
 
-overlay.addEventListener ("click", function(event) {
-	event.preventDefault();
-	popup.classList.remove("popup-show");
-	mapPopup.classList.remove("popup-show");
-	overlay.classList.remove("popup-overlay-show");
-	console.log("removed popup");	/* Act on the event */
-});
+
 

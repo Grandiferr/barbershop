@@ -46,6 +46,24 @@
 					</li>
 				</ol>
 			</section>
+			<section class="popup">
+				<h2 class="popup-heading">Личный кабинет</h2>
+				<p>Введите, пожалуйста, свой логин и пароль</p>
+				<form class="f-login-form" method="post">
+					<input class="icon-user" name="login" type="text" placeholder="Логин">
+					<label for="user"></label>
+					<input class="icon-password" id="pass" name="password" type="password" placeholder="Пароль">
+					<label for="pass"></label>
+					<input id="remember_me" type="checkbox" checked>
+					<label class="remember" for="remember_me">
+						<span>Запомните меня</span>
+					</label>
+					<a class="popup--forgot" href="#">я забыл пароль</a>
+					<button class="btn" type="submit">Войти</button>
+				</form>
+					<button class="close-button" type="button"></button>
+			</section>
+			<div class="popup-overlay"></div> 
 		</header>
 		<section class="item-gallery">
 			<div class="item-gallery--big">
@@ -103,5 +121,6 @@
 			</section>
 		</div>
 	</footer>
+	<script src="./js/popup.js"></script>
 </body>
 </html>
