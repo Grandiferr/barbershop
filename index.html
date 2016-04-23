@@ -121,5 +121,27 @@
 			</section>
 		</div>
 	</footer>
+	<section class="popup">
+		<h2 class="popup-heading">Личный кабинет</h2>
+		<p>Введите, пожалуйста, свой логин и пароль</p>
+		<form class="f-login-form" method="post">
+			<input class="icon-user" id="user" name="login" type="text" placeholder="Логин">
+			<label for="user"></label>
+			<input class="icon-password" id="pass" name="password" type="password" placeholder="Пароль">
+			<label for="pass"></label>
+			<input id="remember_me" type="checkbox" checked>
+			<label class="remember" for="remember_me">
+				<span>Запомните меня</span>
+			</label>
+			<a class="popup--forgot" href="#">я забыл пароль</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+			<button class="close-button" id="close-popup" type="button"></button>
+	</section>
+	<section class="popup-map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7287533164465!2d30.31985701609695!3d59.9366429818755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f8f62bb3f%3A0xdbd8ceddae86ceba!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1461390932654" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+		<button class="close-button" id="close-popup" type="button"></button>
+	</section>
+	<div class="popup-overlay"></div>
 </body>
 </html>
