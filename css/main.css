@@ -397,7 +397,7 @@ body {
 }
 
 .popup {
-	display: block;
+	display: none;
 	position: fixed;
 	top: 120px;
 	left: 50%;
@@ -409,6 +409,8 @@ body {
 	box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.75);
 	z-index: 5;
 }
+
+
 
 .popup-heading {
 	margin: 0;
@@ -548,13 +550,13 @@ body {
 }
 
 .popup-map {
+	display: none;
 	position: fixed;
 	height: 450px;
     top: 50%;
     left: 50%;
     margin-left: -300px;
     margin-top: -230px;
-    display: block;
     border: 5px solid #fff;
     z-index:10;
 }
@@ -568,6 +570,23 @@ body {
 	left: 0;
 	background-color: rgba(0, 0, 0, 0.5);
 	z-index: 4;
+	display: none;
+}
+
+/*  popup animations */
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	70% { opacity: 1; }
+}
+
+.popup-overlay-show {
+	display: block;
+}
+
+.popup-show {
+	display: block;
+	animation: fade-in 1.2s;
 }
 
 /* Item Page */
