@@ -4,9 +4,9 @@
 	<meta charset="UTF-8">
 	<title>Барбершоп</title>
 	<link rel="stylesheet" href="./css/normalize.css">
-	<link rel="stylesheet" href="./css/main.css">
 	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-
+	<link rel="stylesheet" href="./slider/dist/css/slider-pro.min.css"/>
+	<link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
 	<header class="top-header">
@@ -21,7 +21,7 @@
 				</ul>
 			</nav>
 			<div class="enter">
-				<a class="enter--link" href="#">Вход</a>
+				<a class="enter--link" href="/enter.html">Вход</a>
 			</div>
 		</div>
 		<section class="popup">
@@ -76,15 +76,23 @@
 				</ul>
 				<a href="#" class="btn">Все новости</a>
 			</div>
-			<div class="index-content--right">
+			<div class="index-content--right slider-pro" id="main-slider">
 				<h2 class="index-content--header">Фотогалерея</h2>
-				<div class="gallery">
-					<figure class="gallery-img">
+				<div class="sp-slides">
+					<figure class="gallery-img sp-slide">
 						<img src="./images/gallery-item.jpg" width="286" height="164">
 					</figure>
-					<button class="btn btn-prev" disabled>Назад</button>
-					<button class="btn btn-next">Вперед</button>
+					<figure class="gallery-img sp-slide">
+						<img src="./images/gallery-item.jpg" width="286" height="164">
+					</figure>
+					<figure class="gallery-img sp-slide">
+						<img src="./images/gallery-item.jpg" width="286" height="164">
+					</figure>
 				</div>
+					<!-- Replaced with default slider controls which are styled with overwritten styles 
+					<button class="btn btn-prev">Назад</button>
+					<button class="btn btn-next">Вперед</button>
+					-->
 			</div>
 		</section>
 		<section class="index-content clearfix">
@@ -100,7 +108,7 @@
 					Пн-Пт. с 10:00 до 22:00<br>
 					Сб-Вс. с 10:00 до 19:00<br>
 				</p>
-				<a class="btn open-map">Как проехать</a>
+				<a href="./proezd.html" class="btn open-map">Как проехать</a>
 				<a class="btn">Обратная связь</a>
 			</div>
 			<div class="index-content--right">
@@ -146,5 +154,18 @@
 		<button class="close-button" type="button"></button>
 	</section>
 	<script src="./js/popup.js"></script>
+	<script src="./slider/libs/jquery-1.11.0.min.js"></script>
+	<script src="./slider/dist/js/jquery.sliderPro.min.js"></script>
+	<script type="text/javascript">
+    jQuery( document ).ready(function( $ ) {
+        $( '#main-slider' ).sliderPro({
+        	width: 286,
+        	height: 184,
+        	buttons: false,
+        	fadeArrows: false,
+        	arrows: true
+        });
+    });
+</script>
 </body>
 </html>

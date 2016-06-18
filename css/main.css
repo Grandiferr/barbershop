@@ -68,14 +68,14 @@ body {
 .nav--item {
 	display: inline-block;
 	font-size: 16px;
-	line-height: 20px;
+	line-height: 70px;
 	vertical-align: baseline;
 }
 
 .nav--item a {
 	display: block;
 	color: #fff;
-	padding: 25px 20px;
+	padding: 0px 20px;
 	text-decoration: none;
 	text-transform: uppercase;
 	transition: ease 0.3s;
@@ -87,6 +87,8 @@ body {
 }
 
 .nav--item_active a:after {
+	content: '';
+	display: block;
 	width: auto;
 	height: 5px;
 	background-color: #fff;
@@ -105,6 +107,16 @@ body {
 .enter {
 	float: right;
 	position: relative;
+}
+
+.enter-page {
+	width: 460px;
+	margin: 0 auto;
+	padding: 0px 80px;
+	padding-bottom: 55px;
+	box-sizing: border-box;
+	z-index: 5;
+	color: #000;
 }
 
 .enter--link::before {
@@ -1051,4 +1063,69 @@ body {
 }
 
 
+/* Overwriting slider styles*/
 
+.sp-horizontal .sp-previous-arrow:before,
+.sp-horizontal .sp-next-arrow:before {
+	content: none;
+}
+
+.sp-horizontal .sp-next-arrow:after {
+    content: 'ВПЕРЕД';
+    display: inline-block;
+    position: initial;
+    transform: initial;
+    -webkit-transform: initial;
+    background-color: rgba(0,0,0,0);
+}
+
+.sp-horizontal .sp-previous-arrow:after {
+    content: 'НАЗАД';
+    display: inline-block;
+    position: initial;
+    transform: initial;
+    -webkit-transform: initial;
+    background-color: rgba(0,0,0,0);
+}
+
+.sp-arrow {
+	display: inline-block;
+	padding: 15px 35px;
+	margin-right: 20px;
+	font-size: 14px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: white;
+	background-color: black;
+	border: none;
+	transition: ease 0.3s;
+	cursor: pointer;
+	width: auto;
+    height: auto;
+}
+
+.sp-horizontal .sp-arrows {
+	margin-top: 143px;
+}
+
+.sp-horizontal .sp-next-arrow {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 15px 50px;
+}
+
+.sp-horizontal .sp-previous-arrow {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	margin: 0;
+	padding: 15px 50px;
+}
+
+.sp-arrow:hover:not([disabled]) {
+	background-color: #663d15;
+	transition: ease-in-out 0.3s;
+}
+ 

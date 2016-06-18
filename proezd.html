@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbershop item</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+</head>
+<body class="inner-body">
+	<header class="top-header">
+		<div class="container clearfix">
+			<nav class="nav">
+				<div class="logo">
+					<a href="./index.html"><img src="./images/logo-little.png" alt="logo"></a>
+				</div>
+				<ul class="nav--list">
+					<li class="nav--item"><a href="#">Информация</a></li>
+					<li class="nav--item"><a href="#">Новости</a></li>
+					<li class="nav--item"><a href="./price.html">Прайс-лист</a></li>
+					<li class="nav--item"><a href="./catalog.html">Магазин</a></li>
+					<li class="nav--item"><a href="#">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="enter">
+				<a class="enter--link" href="#">Вход</a>
+			</div>
+		</div>
+	</header>
+	<main class="container clearfix">
+		<header class="header-container">
+			<h1 class="main-content--header">Личный кабинет</h1>
+			<section class="breadcrumbs">
+				<ol class="breadcrumbs-list">
+					<li class="breadcrumbs-list--item">
+						<a href="./index.html">Главная</a>
+					</li>
+					<li class="breadcrumbs-list--item">
+						<span>Личный кабинет</span>
+					</li>
+				</ol>
+			</section>
+			<section class="popup">
+				<h2 class="popup-heading">Личный кабинет</h2>
+				<p>Введите, пожалуйста, свой логин и пароль</p>
+				<form class="f-login-form" method="post">
+					<input class="icon-user" name="login" type="text" placeholder="Логин">
+					<label for="user"></label>
+					<input class="icon-password" id="pass" name="password" type="password" placeholder="Пароль">
+					<label for="pass"></label>
+					<input id="remember_me" type="checkbox" checked>
+					<label class="remember" for="remember_me">
+						<span>Запомните меня</span>
+					</label>
+					<a class="popup--forgot" href="#">я забыл пароль</a>
+					<button class="btn" type="submit">Войти</button>
+				</form>
+					<button class="close-button" type="button"></button>
+			</section>
+			<div class="popup-overlay"></div> 
+		</header>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.7287533164465!2d30.31985701609695!3d59.9366429818755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310f8f62bb3f%3A0xdbd8ceddae86ceba!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDI5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sua!4v1461390932654" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</main>
+	<footer class="footer">
+		<div class="container clearfix">
+			<section class="footer--info">
+				<p>Барбершоп "Бородинский"<br>
+				Адрес: г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+				<a class="footer-link" href="#" >Как нас найти?</a><br>
+				Телефон: +7 (495) 666-02-66</p>
+			</section>
+			<section class="footer--socials">
+				<p>
+					Давайте дружить!
+				</p>
+				<a href="#" class="socials--link socials--link_vk">Вконтакте</a>
+				<a href="#" class="socials--link socials--link_fb">Фейсбук</a>
+				<a href="#" class="socials--link socials--link_inst">Инстаграм</a>
+			</section>
+			<section class="footer--devs">
+				<p>Разработано</p>
+				<a class="btn" href="http://htmlacademy.ru">Htmlacademy.ru</a>
+			</section>
+		</div>
+	</footer>
+	<script src="./js/popup.js"></script>
+</body>
+</html>
